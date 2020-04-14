@@ -8,13 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
+    @IBOutlet weak var pokemanView: UICollectionView!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        pokemanView.dataSource=self
+        pokemanView.delegate=self
         // Do any additional setup after loading the view.
     }
 
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 6
+    }
 
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokeCell", for: indexPath) as? PokeCell {
+
+            return cell
+        }
+        return UICollectionViewCell();
+    }
 }
 
