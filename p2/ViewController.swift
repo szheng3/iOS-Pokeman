@@ -8,21 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet weak var pokemanView: UICollectionView!
 
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        pokemanView.dataSource=self
-        pokemanView.delegate=self
+        pokemanView.dataSource = self
+        pokemanView.delegate = self
         // Do any additional setup after loading the view.
     }
-
-
-}
-
-extension ViewController:UICollectionViewDelegate, UICollectionViewDataSource{
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
@@ -38,4 +33,25 @@ extension ViewController:UICollectionViewDelegate, UICollectionViewDataSource{
         return UICollectionViewCell();
     }
 
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("ggg")
+        let a = "gg"
+        performSegue(withIdentifier: "DetailsViewController", sender: a)
+
+
+    }
+
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+////        if segue.identifier == "PokemonDetailVC" {
+////            if let detailsVC = segue.destination as? PokemonDetailVC {
+////                if let poke = sender as? Pokemon {
+////                    detailsVC.pokemon = poke
+////                }
+////            }
+////        }
+//
+//    }
+
+
 }
+

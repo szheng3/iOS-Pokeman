@@ -15,7 +15,9 @@
 		2236641224465BC400054249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2236641024465BC400054249 /* LaunchScreen.storyboard */; };
 		2236641D24465BC400054249 /* p2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236641C24465BC400054249 /* p2Tests.swift */; };
 		2236642824465BC400054249 /* p2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236642724465BC400054249 /* p2UITests.swift */; };
+		685983F9672FE2BAE5302DEE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685985EE8B176FDE52E75976 /* DetailsViewController.swift */; };
 		685986FF5A27CE974FDDC19D /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6859823015B2ECB763F44FEC /* PokeCell.swift */; };
+		68598B831BCB7275DB81A581 /* Pokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685980C079754FAB18E68990 /* Pokes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +52,9 @@
 		2236642324465BC400054249 /* p2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = p2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2236642724465BC400054249 /* p2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = p2UITests.swift; sourceTree = "<group>"; };
 		2236642924465BC400054249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		685980C079754FAB18E68990 /* Pokes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokes.swift; sourceTree = "<group>"; };
 		6859823015B2ECB763F44FEC /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
+		685985EE8B176FDE52E75976 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				2236641024465BC400054249 /* LaunchScreen.storyboard */,
 				2236641324465BC400054249 /* Info.plist */,
 				6859823015B2ECB763F44FEC /* PokeCell.swift */,
+				685985EE8B176FDE52E75976 /* DetailsViewController.swift */,
+				685980C079754FAB18E68990 /* Pokes.swift */,
 			);
 			path = p2;
 			sourceTree = "<group>";
@@ -266,6 +272,8 @@
 				2236640624465BC200054249 /* AppDelegate.swift in Sources */,
 				2236640824465BC200054249 /* SceneDelegate.swift in Sources */,
 				685986FF5A27CE974FDDC19D /* PokeCell.swift in Sources */,
+				685983F9672FE2BAE5302DEE /* DetailsViewController.swift in Sources */,
+				68598B831BCB7275DB81A581 /* Pokes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
