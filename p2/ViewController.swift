@@ -7,19 +7,53 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 class ViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet weak var pokemanView: UICollectionView!
     var pokemon = [Pokes]()
 
+    var musicPlayer: AVAudioPlayer!
 
+    @IBAction func playSound(_ sender: Any) {
+        if musicPlayer.isPlaying {
+
+            musicPlayer.pause()
+//            sender.alpha = 0.2
+
+        } else {
+
+            musicPlayer.play()
+//            sender.alpha = 1.0
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         pokemanView.dataSource = self
         pokemanView.delegate = self
         parsePokemonCSV()
+        initAudio()
 
         // Do any additional setup after loading the view.
+    }
+
+    func initAudio() {
+
+        let path = Bundle.main.path(forResource: "music", ofType: "mp3")!
+
+        do {
+
+            musicPlayer = try AVAudioPlayer(contentsOf: URL(string: path)!)
+            musicPlayer.prepareToPlay()
+            musicPlayer.numberOfLoops = -1
+            musicPlayer.play()
+
+        } catch let err as NSError {
+
+            print(err.debugDescription)
+        }
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
