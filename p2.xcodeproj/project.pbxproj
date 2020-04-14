@@ -15,6 +15,7 @@
 		2236641224465BC400054249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2236641024465BC400054249 /* LaunchScreen.storyboard */; };
 		2236641D24465BC400054249 /* p2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236641C24465BC400054249 /* p2Tests.swift */; };
 		2236642824465BC400054249 /* p2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236642724465BC400054249 /* p2UITests.swift */; };
+		685981FCBE558D172548BE6D /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68598E13448911B71D8CB340 /* csv.swift */; };
 		685983F9672FE2BAE5302DEE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685985EE8B176FDE52E75976 /* DetailsViewController.swift */; };
 		685986FF5A27CE974FDDC19D /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6859823015B2ECB763F44FEC /* PokeCell.swift */; };
 		68598787A1C35A6F23731600 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 685983C0FC00B951BA51F006 /* pokemon.ttf */; };
@@ -61,6 +62,7 @@
 		6859852ADA6E4D8EFD84B933 /* pokemon.csv */ = {isa = PBXFileReference; lastKnownFileType = file.csv; path = pokemon.csv; sourceTree = "<group>"; };
 		685985EE8B176FDE52E75976 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		6859892F8ECB9788417FDA36 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		68598E13448911B71D8CB340 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				6859892F8ECB9788417FDA36 /* music.mp3 */,
 				685983C0FC00B951BA51F006 /* pokemon.ttf */,
 				6859852ADA6E4D8EFD84B933 /* pokemon.csv */,
+				68598E13448911B71D8CB340 /* csv.swift */,
 			);
 			path = p2;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				685986FF5A27CE974FDDC19D /* PokeCell.swift in Sources */,
 				685983F9672FE2BAE5302DEE /* DetailsViewController.swift in Sources */,
 				68598B831BCB7275DB81A581 /* Pokes.swift in Sources */,
+				685981FCBE558D172548BE6D /* csv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
