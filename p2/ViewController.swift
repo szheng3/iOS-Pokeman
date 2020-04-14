@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
+class ViewController: UIViewController {
     @IBOutlet weak var pokemanView: UICollectionView!
 
     
@@ -19,7 +19,13 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
         // Do any additional setup after loading the view.
     }
 
+
+}
+
+extension ViewController:UICollectionViewDelegate, UICollectionViewDataSource{
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+
         return 6
     }
 
@@ -31,5 +37,5 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
         }
         return UICollectionViewCell();
     }
-}
 
+}
