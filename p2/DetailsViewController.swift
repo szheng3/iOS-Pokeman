@@ -7,11 +7,15 @@ import UIKit
 
 class DetailsViewController:ViewController {
 
+
     override func viewDidLoad() {
 //        super.viewDidLoad()
 //        pokemanView.dataSource = self
 //        pokemanView.delegate = self
         // Do any additional setup after loading the view.
+    }
+    @IBAction func Dismiss(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
 
 }

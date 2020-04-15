@@ -138,14 +138,70 @@
                     <view key="view" contentMode="scaleToFill" id="smr-bz-fcm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTi-Wd-wgz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0r-tS-PzW">
+                                        <rect key="frame" x="8" y="10" width="34" height="30"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="Dismiss:" destination="73R-LK-mOi" eventType="touchUpInside" id="12a-pY-cpN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="a0r-tS-PzW" firstAttribute="centerY" secondItem="VTi-Wd-wgz" secondAttribute="centerY" id="mvO-qE-iUx"/>
+                                    <constraint firstAttribute="height" constant="50" id="nri-WO-dMV"/>
+                                    <constraint firstItem="a0r-tS-PzW" firstAttribute="leading" secondItem="VTi-Wd-wgz" secondAttribute="leading" constant="8" id="wx2-nH-eYm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VTi-Wd-wgz" firstAttribute="top" secondItem="mt6-ea-A3r" secondAttribute="top" id="7xb-qh-0po"/>
+                            <constraint firstItem="mt6-ea-A3r" firstAttribute="trailing" secondItem="VTi-Wd-wgz" secondAttribute="trailing" id="AfM-yB-IdP"/>
+                            <constraint firstItem="VTi-Wd-wgz" firstAttribute="leading" secondItem="smr-bz-fcm" secondAttribute="leading" id="bTL-Yi-Civ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mt6-ea-A3r"/>
                     </view>
                     <navigationItem key="navigationItem" id="IeT-r4-duz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTq-ep-d72" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0wg-IY-avk">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PokeMan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZu-kT-xvn">
+                            <rect key="frame" x="168" y="36" width="78" height="28"/>
+                            <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="20"/>
+                            <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <color key="highlightedColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uck-zx-MN8">
+                            <rect key="frame" x="343" y="30" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="6zg-du-2yr"/>
+                                <constraint firstAttribute="width" constant="40" id="KgW-0i-nwS"/>
+                            </constraints>
+                            <state key="normal" image="music"/>
+                            <connections>
+                                <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="huW-kh-XHC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Uck-zx-MN8" firstAttribute="centerY" secondItem="0wg-IY-avk" secondAttribute="centerY" id="9Uh-eu-Jgm"/>
+                        <constraint firstItem="kZu-kT-xvn" firstAttribute="centerX" secondItem="0wg-IY-avk" secondAttribute="centerX" id="ByK-QO-bSi"/>
+                        <constraint firstItem="kZu-kT-xvn" firstAttribute="centerY" secondItem="0wg-IY-avk" secondAttribute="centerY" id="GKF-FR-ID0"/>
+                        <constraint firstAttribute="height" constant="100" id="j3B-7Z-K1d"/>
+                        <constraint firstAttribute="trailing" secondItem="Uck-zx-MN8" secondAttribute="trailing" constant="31" id="sxW-T6-HSA"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="QIk-ld-lIE"/>
+                </view>
             </objects>
-            <point key="canvasLocation" x="1049" y="148"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="147.99107142857142"/>
         </scene>
     </scenes>
     <resources>
