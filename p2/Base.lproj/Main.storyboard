@@ -149,9 +149,17 @@
                                             <action selector="Dismiss:" destination="73R-LK-mOi" eventType="touchUpInside" id="12a-pY-cpN"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2F-0o-4Us">
+                                        <rect key="frame" x="184.5" y="14.5" width="45" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="Y2F-0o-4Us" firstAttribute="centerY" secondItem="VTi-Wd-wgz" secondAttribute="centerY" id="K6h-SX-0UK"/>
+                                    <constraint firstItem="Y2F-0o-4Us" firstAttribute="centerX" secondItem="VTi-Wd-wgz" secondAttribute="centerX" id="Tq9-df-zgV"/>
                                     <constraint firstItem="a0r-tS-PzW" firstAttribute="centerY" secondItem="VTi-Wd-wgz" secondAttribute="centerY" id="mvO-qE-iUx"/>
                                     <constraint firstAttribute="height" constant="50" id="nri-WO-dMV"/>
                                     <constraint firstItem="a0r-tS-PzW" firstAttribute="leading" secondItem="VTi-Wd-wgz" secondAttribute="leading" constant="8" id="wx2-nH-eYm"/>
@@ -167,6 +175,9 @@
                         <viewLayoutGuide key="safeArea" id="mt6-ea-A3r"/>
                     </view>
                     <navigationItem key="navigationItem" id="IeT-r4-duz"/>
+                    <connections>
+                        <outlet property="titleName" destination="Y2F-0o-4Us" id="ZO1-eS-Mul"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTq-ep-d72" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0wg-IY-avk">

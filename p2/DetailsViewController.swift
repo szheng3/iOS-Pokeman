@@ -5,15 +5,25 @@
 
 import UIKit
 
-class DetailsViewController:ViewController {
+class DetailsViewController: UIViewController {
+
+    @IBOutlet weak var titleName: UILabel!
+    var pokemon: Pokes!
 
 
     override func viewDidLoad() {
-//        super.viewDidLoad()
+        super.viewDidLoad()
 //        pokemanView.dataSource = self
 //        pokemanView.delegate = self
         // Do any additional setup after loading the view.
+        titleName.text = pokemon.name
+
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+
     @IBAction func Dismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

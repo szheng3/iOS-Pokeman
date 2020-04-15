@@ -99,21 +99,21 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
     }
 
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "DetailsViewController", sender: self)
+        performSegue(withIdentifier: "DetailsViewController", sender: pokemon[indexPath.row])
 
 
     }
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-////        if segue.identifier == "PokemonDetailVC" {
-////            if let detailsVC = segue.destination as? PokemonDetailVC {
-////                if let poke = sender as? Pokemon {
-////                    detailsVC.pokemon = poke
-////                }
-////            }
-////        }
-//
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DetailsViewController" {
+            if let detailsVC = segue.destination as? DetailsViewController {
+                if let poke = sender as? Pokes {
+                    detailsVC.pokemon = poke
+                }
+            }
+        }
+
+    }
 
 
 }
