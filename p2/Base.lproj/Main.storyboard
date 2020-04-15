@@ -124,6 +124,7 @@
                     </view>
                     <connections>
                         <outlet property="pokemanView" destination="h0m-KV-tHQ" id="AQ8-r4-8T9"/>
+                        <outlet property="search" destination="Wmz-n5-xzx" id="0Ph-pS-cBz"/>
                         <segue destination="73R-LK-mOi" kind="show" identifier="DetailsViewController" id="YuZ-TV-OLY"/>
                     </connections>
                 </viewController>
