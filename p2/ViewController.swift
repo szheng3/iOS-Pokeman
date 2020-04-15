@@ -16,6 +16,16 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
 
     var musicPlayer: AVAudioPlayer!
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        pokemanView.dataSource = self
+        pokemanView.delegate = self
+        parsePokemonCSV()
+        initAudio()
+
+        // Do any additional setup after loading the view.
+    }
+
     @IBAction func playSound(_ sender: Any) {
         if musicPlayer.isPlaying {
 
@@ -28,16 +38,7 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
 //            sender.alpha = 1.0
         }
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        pokemanView.dataSource = self
-        pokemanView.delegate = self
-        parsePokemonCSV()
-        initAudio()
 
-        // Do any additional setup after loading the view.
-    }
 
     func initAudio() {
 
