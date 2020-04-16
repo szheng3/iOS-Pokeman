@@ -16,7 +16,13 @@ class DetailsViewController: UIViewController {
 //        pokemanView.dataSource = self
 //        pokemanView.delegate = self
         // Do any additional setup after loading the view.
-        titleName.text = pokemon.name
+        PokesService.shared.getData(pokeId: pokemon.pokedexId) {
+
+            let unwrappedValue = PokesService.shared.pokesDetails?.name ?? "gg"
+
+            self.titleName.text = unwrappedValue
+
+        }
 
     }
 
